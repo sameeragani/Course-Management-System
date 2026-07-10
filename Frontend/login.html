@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | LearnHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                LearnHub
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse-courses.html">Courses</a></li>
+                <li><a href="register.html">Register</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Login Section -->
+
+    <section class="login-section">
+
+        <!-- Left Side -->
+
+        <div class="login-image">
+
+            <img src="images/login-illustration.jpg" alt="Online Learning">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="login-card">
+
+            <!-- Role Tabs (pure CSS, no JavaScript) -->
+
+            <div class="role-tabs">
+
+                <input type="radio" name="role" id="tab-student" checked>
+                <input type="radio" name="role" id="tab-admin">
+
+                <div class="tab-labels">
+                    <label for="tab-student">Student Login</label>
+                    <label for="tab-admin">Admin Login</label>
+                </div>
+
+                <!-- Student Login Panel -->
+
+                <div class="tab-panel student-panel">
+
+                    <h2>Welcome Back!</h2>
+                    <p>Login to continue your learning journey.</p>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="login-options">
+
+                            <label>
+                                <input type="checkbox">
+                                Remember Me
+                            </label>
+
+                            <a href="forgot-password.html">Forgot Password?</a>
+
+                        </div>
+
+                        <a href="student-dashboard.html" class="login-button">Login as Student</a>
+
+                    </form>
+
+                    <p class="register-text">
+                        Don't have an account?
+                        <a href="register.html">Register</a>
+                    </p>
+
+                </div>
+
+                <!-- Admin Login Panel -->
+
+                <div class="tab-panel admin-panel">
+
+                    <h2>Admin Access</h2>
+                    <p>Login to manage courses and students.</p>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label>Admin Email</label>
+                            <input type="email" placeholder="Enter admin email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter admin password">
+                        </div>
+
+                        <div class="login-options">
+
+                            <label>
+                                <input type="checkbox">
+                                Remember Me
+                            </label>
+
+                            <a href="forgot-password.html">Forgot Password?</a>
+
+                        </div>
+
+                        <a href="admin-dashboard.html" class="login-button">Login as Admin</a>
+
+                    </form>
+
+                    <p class="register-text">
+                        Admin accounts are created by LearnHub directly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
