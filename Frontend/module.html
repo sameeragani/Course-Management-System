@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building a Component Library · Module 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="student-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="browse-courses.html">Browse Courses</a>
+      <a href="my-courses.html" class="active">My Courses</a>
+      <a href="progress.html">Progress</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Ava Thompson</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Module 3 · Building a component library</h1>
+      <a href="course-content.html" class="btn btn-outline btn-sm">Back to course</a>
+    </div>
+
+    <div class="main-content">
+      <div class="crumbs"><a href="my-courses.html">My courses</a><span>/</span><a href="course-content.html">UI Design Foundations</a><span>/</span>Module 3</div>
+
+      <div class="card">
+        <span class="eyebrow">Lesson 3 of 6 · 51 min</span>
+        <h2 style="margin-top:.4em">Why components, not pages</h2>
+        <p class="muted">A component library turns repeated interface patterns — buttons, inputs, cards — into named, reusable pieces. This lesson walks through auditing an existing screen for repeated patterns, naming them consistently, and defining the states each one needs to support.</p>
+
+        <div style="margin:1.4rem 0">
+          <a href="video-player.html" class="btn btn-primary">Watch lesson video</a>
+          <a href="materials.html" class="btn btn-outline" style="margin-left:.7em">Download working files</a>
+        </div>
+
+        <div class="alert alert-gold">This lesson includes a downloadable Figma file with the full component set used in the demo.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>In this module</h2></div>
+        <div class="lesson-list">
+          <div class="lesson-item current"><span class="lesson-num">3</span> Building a component library <span class="lesson-time">51 min</span></div>
+          <div class="lesson-item"><span class="lesson-num">4</span> Handling states &amp; responsive behavior <span class="lesson-time">40 min</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between">
+        <a href="course-content.html" class="btn btn-outline">&larr; Previous lesson</a>
+        <a href="video-player.html" class="btn btn-primary">Continue to lesson video &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

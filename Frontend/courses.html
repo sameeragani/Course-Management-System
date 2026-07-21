@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Courses · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="admin-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Admin</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="add-course.html">Add course</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Renata Osei</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Courses</h1>
+      <a href="add-course.html" class="btn btn-primary btn-sm">+ New course</a>
+    </div>
+
+    <div class="main-content" style="max-width:100%">
+      <div class="card" style="margin-bottom:1.4rem">
+        <div style="display:flex;gap:1rem;align-items:center">
+          <input type="search" placeholder="Search courses by title…" style="max-width:320px">
+          <select style="max-width:180px">
+            <option>All categories</option>
+            <option>Design</option>
+            <option>Data</option>
+            <option>Career</option>
+          </select>
+          <select style="max-width:160px">
+            <option>All statuses</option>
+            <option>Published</option>
+            <option>Draft</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr><th>Course</th><th>Category</th><th>Modules</th><th>Learners</th><th>Status</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UI Design Foundations</td><td>Design</td><td>6</td><td>6,204</td>
+              <td><span class="badge badge-teal">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="btn btn-sm btn-outline">View</a><a href="edit-course.html" class="btn btn-sm btn-outline">Edit</a></td>
+            </tr>
+            <tr>
+              <td>SQL for Analysts</td><td>Data</td><td>8</td><td>5,110</td>
+              <td><span class="badge badge-teal">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="btn btn-sm btn-outline">View</a><a href="edit-course.html" class="btn btn-sm btn-outline">Edit</a></td>
+            </tr>
+            <tr>
+              <td>Technical Writing 101</td><td>Career</td><td>5</td><td>3,982</td>
+              <td><span class="badge badge-teal">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="btn btn-sm btn-outline">View</a><a href="edit-course.html" class="btn btn-sm btn-outline">Edit</a></td>
+            </tr>
+            <tr>
+              <td>Intro to Data Visualization</td><td>Data</td><td>7</td><td>0</td>
+              <td><span class="badge badge-ink">Draft</span></td>
+              <td class="table-actions"><a href="course-details.html" class="btn btn-sm btn-outline">View</a><a href="edit-course.html" class="btn btn-sm btn-outline">Edit</a></td>
+            </tr>
+            <tr>
+              <td>Product Management Basics</td><td>Career</td><td>6</td><td>1,247</td>
+              <td><span class="badge badge-teal">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="btn btn-sm btn-outline">View</a><a href="edit-course.html" class="btn btn-sm btn-outline">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

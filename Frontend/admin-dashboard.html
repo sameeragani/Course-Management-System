@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="admin-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Admin</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html" class="active">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="add-course.html">Add course</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Renata Osei</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <a href="add-course.html" class="btn btn-primary btn-sm">+ New course</a>
+    </div>
+
+    <div class="main-content" style="max-width:100%">
+      <div class="stat-grid">
+        <div class="stat-card"><div class="num">128</div><div class="label">Published courses</div></div>
+        <div class="stat-card"><div class="num">42,900</div><div class="label">Enrolled learners</div></div>
+        <div class="stat-card"><div class="num">16,340</div><div class="label">Certificates issued</div></div>
+        <div class="stat-card"><div class="num">78%</div><div class="label">Avg. completion rate</div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Recent enrollments</h2>
+          <a href="courses.html" class="btn btn-outline btn-sm">View all courses</a>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Learner</th><th>Course</th><th>Enrolled</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ava Thompson</td><td>UI Design Foundations</td><td>Jul 14, 2026</td><td><span class="badge badge-teal">Active</span></td></tr>
+              <tr><td>Daniel Kim</td><td>SQL for Analysts</td><td>Jul 14, 2026</td><td><span class="badge badge-teal">Active</span></td></tr>
+              <tr><td>Priya Nair</td><td>UI Design Foundations</td><td>Jul 12, 2026</td><td><span class="badge badge-gold">Completed</span></td></tr>
+              <tr><td>Marcus Ellis</td><td>Technical Writing 101</td><td>Jul 11, 2026</td><td><span class="badge badge-teal">Active</span></td></tr>
+              <tr><td>Sofia Reyes</td><td>SQL for Analysts</td><td>Jul 10, 2026</td><td><span class="badge badge-rose">Paused</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>Top performing courses</h2></div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Course</th><th>Learners</th><th>Completion rate</th><th>Rating</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>UI Design Foundations</td><td>6,204</td><td>84%</td><td>4.8</td></tr>
+              <tr><td>SQL for Analysts</td><td>5,110</td><td>76%</td><td>4.7</td></tr>
+              <tr><td>Technical Writing 101</td><td>3,982</td><td>81%</td><td>4.9</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

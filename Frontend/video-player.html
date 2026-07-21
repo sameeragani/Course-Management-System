@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building a Component Library · Lesson Video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="student-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="browse-courses.html">Browse Courses</a>
+      <a href="my-courses.html" class="active">My Courses</a>
+      <a href="progress.html">Progress</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Ava Thompson</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Building a component library</h1>
+      <a href="module.html" class="btn btn-outline btn-sm">Back to lesson notes</a>
+    </div>
+
+    <div class="main-content" style="max-width:100%">
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:1.6rem;align-items:start">
+        <div>
+          <div class="video-frame">
+            <div class="video-play">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M8 5 L19 12 L8 19 Z"/></svg>
+            </div>
+            <div style="position:absolute;bottom:0;left:0;right:0">
+              <div class="video-meta-bar">
+                <span>18:24 / 51:00</span>
+                <span>1080p</span>
+              </div>
+              <div class="progress-bar" style="border-radius:0;height:4px"><span style="width:36%"></span></div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:1.4rem">
+            <span class="eyebrow">Lesson 3 of 6</span>
+            <h2 style="margin-top:.3em">Why components, not pages</h2>
+            <p class="muted">Auditing an existing screen for repeated patterns, naming them consistently, and defining the states each component needs — hover, focus, disabled, and error.</p>
+            <div style="display:flex;gap:1rem">
+              <a href="module.html" class="btn btn-outline btn-sm">Lesson notes</a>
+              <a href="materials.html" class="btn btn-outline btn-sm">Download files</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h3>Module 3 lessons</h3></div>
+          <div class="lesson-list">
+            <div class="lesson-item current"><span class="lesson-num">3</span> Building a component library <span class="lesson-time">51m</span></div>
+            <div class="lesson-item"><span class="lesson-num">4</span> Handling states &amp; responsiveness <span class="lesson-time">40m</span></div>
+          </div>
+          <a href="course-content.html" class="btn btn-outline btn-block btn-sm" style="margin-top:1rem">View full curriculum</a>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;margin-top:1.6rem">
+        <a href="module.html" class="btn btn-outline">&larr; Back to notes</a>
+        <a href="course-content.html" class="btn btn-primary">Mark lesson complete &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

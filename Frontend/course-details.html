@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Design Foundations · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="seal">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" style="color:var(--gold-dark)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="browse-courses.html" class="active">Browse Courses</a>
+      <a href="my-courses.html">My Courses</a>
+    </nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Get started</a>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding-top:2.4rem">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="browse-courses.html">Browse courses</a><span>/</span>UI Design Foundations</div>
+</div>
+
+<div class="container" style="display:grid;grid-template-columns:1.6fr 1fr;gap:2.4rem;align-items:start;padding-bottom:4rem">
+  <div>
+    <span class="badge badge-gold">Design</span>
+    <h1 style="margin-top:.5em">UI Design Foundations</h1>
+    <p class="muted" style="font-size:1.05rem;max-width:60ch">Learn the fundamentals of user interface design — layout, type, color, and componentry — and build a portfolio-ready project along the way. No prior design experience required.</p>
+
+    <div style="display:flex;gap:1.6rem;margin:1.4rem 0;font-size:.9rem" class="muted">
+      <span>⭐ 4.8 (2,140 ratings)</span>
+      <span>6,204 learners enrolled</span>
+      <span>9h 40m total</span>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h2>What you'll learn</h2></div>
+      <ul style="display:grid;grid-template-columns:1fr 1fr;gap:.6em .8em">
+        <li>· Layout systems &amp; visual hierarchy</li>
+        <li>· Typography pairing and scale</li>
+        <li>· Color theory &amp; accessible contrast</li>
+        <li>· Building a reusable component library</li>
+        <li>· Prototyping a real interface</li>
+        <li>· Presenting design decisions clearly</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h2>Curriculum</h2></div>
+      <div class="lesson-list">
+        <div class="lesson-item"><span class="lesson-num">1</span> Design principles &amp; layout systems <span class="lesson-time">42 min</span></div>
+        <div class="lesson-item"><span class="lesson-num">2</span> Typography that holds a page together <span class="lesson-time">38 min</span></div>
+        <div class="lesson-item"><span class="lesson-num">3</span> Color, contrast, and accessibility <span class="lesson-time">45 min</span></div>
+        <div class="lesson-item"><span class="lesson-num">4</span> Building a component library <span class="lesson-time">51 min</span></div>
+        <div class="lesson-item"><span class="lesson-num">5</span> Prototyping your first screen <span class="lesson-time">55 min</span></div>
+        <div class="lesson-item"><span class="lesson-num">6</span> Final project &amp; portfolio review <span class="lesson-time">1h 10m</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="card" style="position:sticky;top:96px">
+      <div class="course-thumb" style="margin:-1.6rem -1.6rem 1.2rem;border-radius:var(--radius) var(--radius) 0 0"></div>
+      <div style="font-family:var(--font-mono);font-size:1.8rem;font-weight:600;color:var(--ink)">$49</div>
+      <p class="muted" style="font-size:.85rem;margin-bottom:1.2rem">One-time payment · lifetime access</p>
+      <a href="enrollment-success.html" class="btn btn-primary btn-block">Enroll now</a>
+      <a href="my-courses.html" class="btn btn-outline btn-block" style="margin-top:.7rem">Go to my courses</a>
+      <ul style="margin-top:1.4rem;font-size:.86rem" class="muted">
+        <li style="margin-bottom:.5em">✓ 6 modules, 9h 40m of video</li>
+        <li style="margin-bottom:.5em">✓ Downloadable project files</li>
+        <li style="margin-bottom:.5em">✓ Certificate on completion</li>
+        <li>✓ Learn on any device</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+      <p class="muted" style="margin-top:1em;max-width:32ch">Courses built by working practitioners, tracked to the last lesson.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <a href="browse-courses.html">Browse courses</a>
+      <a href="my-courses.html">My courses</a>
+      <a href="progress.html">My progress</a>
+    </div>
+    <div>
+      <h4>Account</h4>
+      <a href="login.html">Log in</a>
+      <a href="register.html">Register</a>
+    </div>
+    <div>
+      <h4>Admin</h4>
+      <a href="admin-dashboard.html">Admin dashboard</a>
+      <a href="courses.html">Manage courses</a>
+    </div>
+  </div>
+  <div class="foot-bottom">&copy; 2026 Vantage Learning. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

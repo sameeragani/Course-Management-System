@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Courses · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="student-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="browse-courses.html">Browse Courses</a>
+      <a href="my-courses.html" class="active">My Courses</a>
+      <a href="progress.html">Progress</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Ava Thompson</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar"><h1>My Courses</h1></div>
+
+    <div class="main-content" style="max-width:100%">
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-gold">Design</span></div>
+          <div class="body">
+            <h3>UI Design Foundations</h3>
+            <p class="meta">Module 4 of 6 · Layout systems</p>
+            <div class="progress-bar" style="margin-bottom:1rem"><span style="width:64%"></span></div>
+            <div class="foot"><span class="muted" style="font-size:.82rem">64% complete</span><a href="course-content.html" class="btn btn-sm btn-primary">Continue</a></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-teal">Data</span></div>
+          <div class="body">
+            <h3>SQL for Analysts</h3>
+            <p class="meta">Module 2 of 8 · Joins &amp; subqueries</p>
+            <div class="progress-bar" style="margin-bottom:1rem"><span style="width:22%"></span></div>
+            <div class="foot"><span class="muted" style="font-size:.82rem">22% complete</span><a href="course-content.html" class="btn btn-sm btn-primary">Continue</a></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-ink">Career</span></div>
+          <div class="body">
+            <h3>Technical Writing 101</h3>
+            <p class="meta">Completed May 2, 2026</p>
+            <div class="progress-bar" style="margin-bottom:1rem"><span style="width:100%"></span></div>
+            <div class="foot"><span class="muted" style="font-size:.82rem">100% complete</span><a href="certificate.html" class="btn btn-sm btn-outline">Certificate</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:2rem">
+        <div class="card-header"><h2>Looking for your next course?</h2></div>
+        <p class="muted">Browse the full catalog of 128 courses across design, data, and career skills.</p>
+        <a href="browse-courses.html" class="btn btn-primary">Browse courses</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

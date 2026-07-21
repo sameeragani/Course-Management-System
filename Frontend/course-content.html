@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Design Foundations · Course Content</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="student-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="browse-courses.html">Browse Courses</a>
+      <a href="my-courses.html" class="active">My Courses</a>
+      <a href="progress.html">Progress</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Ava Thompson</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>UI Design Foundations</h1>
+      <span class="badge badge-gold">64% complete</span>
+    </div>
+
+    <div class="main-content">
+      <div class="crumbs"><a href="my-courses.html">My courses</a><span>/</span>UI Design Foundations</div>
+
+      <div class="progress-bar" style="margin-bottom:1.6rem"><span style="width:64%"></span></div>
+
+      <div class="card">
+        <div class="card-header"><h2>Module 1 · Foundations</h2><span class="badge badge-teal">Done</span></div>
+        <div class="lesson-list">
+          <div class="lesson-item done"><span class="lesson-num">✓</span> Design principles &amp; layout systems <span class="lesson-time">42 min</span></div>
+          <div class="lesson-item done"><span class="lesson-num">✓</span> Grids, spacing &amp; visual hierarchy <span class="lesson-time">36 min</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>Module 2 · Typography &amp; Color</h2><span class="badge badge-teal">Done</span></div>
+        <div class="lesson-list">
+          <div class="lesson-item done"><span class="lesson-num">✓</span> Typography that holds a page together <span class="lesson-time">38 min</span></div>
+          <div class="lesson-item done"><span class="lesson-num">✓</span> Color, contrast, and accessibility <span class="lesson-time">45 min</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>Module 3 · Components</h2><span class="badge badge-gold">In progress</span></div>
+        <div class="lesson-list">
+          <div class="lesson-item current"><span class="lesson-num">3</span> Building a component library <span class="lesson-time">51 min</span> <a href="module.html" class="btn btn-sm btn-primary" style="margin-left:.8em">Resume</a></div>
+          <div class="lesson-item"><span class="lesson-num">4</span> Handling states &amp; responsive behavior <span class="lesson-time">40 min</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>Module 4 · Practice &amp; Portfolio</h2><span class="badge badge-ink">Locked</span></div>
+        <div class="lesson-list">
+          <div class="lesson-item"><span class="lesson-num">5</span> Prototyping your first screen <span class="lesson-time">55 min</span></div>
+          <div class="lesson-item"><span class="lesson-num">6</span> Final project &amp; portfolio review <span class="lesson-time">1h 10m</span></div>
+        </div>
+      </div>
+
+      <a href="materials.html" class="btn btn-outline" style="margin-top:.6rem">View course materials</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

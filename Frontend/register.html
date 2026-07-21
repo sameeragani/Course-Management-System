@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create your account · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-shell">
+  <div class="auth-brand">
+    <a href="index.html" class="seal">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <div class="quote">
+      "I stopped losing my place halfway through courses. The progress tracker actually made me finish."
+      <div class="quote-who">— Priya N., UI Design Foundations, completed March 2026</div>
+    </div>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <span class="eyebrow">Step 1 of 1</span>
+      <h1>Create your account</h1>
+      <p class="muted" style="margin-bottom:1.6rem">Free to join. Pay only when you enrol in a course.</p>
+
+      <div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First name <span class="req">*</span></label>
+            <input type="text" id="first-name" name="first-name" placeholder="Ava" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name <span class="req">*</span></label>
+            <input type="text" id="last-name" name="last-name" placeholder="Thompson" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="ava@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password <span class="req">*</span></label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+          <p class="form-hint">Use a mix of letters, numbers, and a symbol.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm password <span class="req">*</span></label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+
+        <div class="form-group checkbox-row">
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms" style="margin:0;font-weight:400">I agree to the Terms of Service and Privacy Policy</label>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block">Create account</button>
+      </div>
+
+      <p class="switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

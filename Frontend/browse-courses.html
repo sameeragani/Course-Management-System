@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse Courses · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="seal">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" style="color:var(--gold-dark)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="browse-courses.html" class="active">Browse Courses</a>
+      <a href="my-courses.html">My Courses</a>
+    </nav>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline btn-sm">Log in</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Get started</a>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding-top:2.4rem;padding-bottom:4rem">
+  <div class="section-head">
+    <span class="eyebrow">128 courses</span>
+    <h1>Browse courses</h1>
+  </div>
+
+  <div class="browse-layout">
+    <div class="card filter-card">
+      <div class="filter-group">
+        <h3>Category</h3>
+        <label class="filter-option"><input type="checkbox" checked> Design</label>
+        <label class="filter-option"><input type="checkbox"> Data</label>
+        <label class="filter-option"><input type="checkbox"> Career</label>
+        <label class="filter-option"><input type="checkbox"> Development</label>
+        <label class="filter-option"><input type="checkbox"> Marketing</label>
+      </div>
+      <div class="filter-group">
+        <h3>Level</h3>
+        <label class="filter-option"><input type="checkbox" checked> Beginner</label>
+        <label class="filter-option"><input type="checkbox"> Intermediate</label>
+        <label class="filter-option"><input type="checkbox"> Advanced</label>
+      </div>
+      <div class="filter-group">
+        <h3>Duration</h3>
+        <label class="filter-option"><input type="radio" name="dur"> Under 5 hours</label>
+        <label class="filter-option"><input type="radio" name="dur" checked> 5 – 10 hours</label>
+        <label class="filter-option"><input type="radio" name="dur"> 10+ hours</label>
+      </div>
+      <button type="button" class="btn btn-outline btn-block btn-sm">Clear filters</button>
+    </div>
+
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem">
+        <input type="search" placeholder="Search courses…" style="max-width:320px">
+        <select style="max-width:200px">
+          <option>Sort: Most popular</option>
+          <option>Sort: Newest</option>
+          <option>Sort: Price, low to high</option>
+        </select>
+      </div>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-gold">Design</span></div>
+          <div class="body"><h3>UI Design Foundations</h3><p class="meta">6 modules · 9h 40m · Beginner</p><div class="foot"><span class="price">$49</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-teal">Data</span></div>
+          <div class="body"><h3>SQL for Analysts</h3><p class="meta">8 modules · 11h 05m · Beginner</p><div class="foot"><span class="price">$59</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-ink">Career</span></div>
+          <div class="body"><h3>Technical Writing 101</h3><p class="meta">5 modules · 6h 20m · Beginner</p><div class="foot"><span class="price">$39</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-teal">Data</span></div>
+          <div class="body"><h3>Intro to Data Visualization</h3><p class="meta">7 modules · 8h 15m · Beginner</p><div class="foot"><span class="price">$55</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-ink">Career</span></div>
+          <div class="body"><h3>Product Management Basics</h3><p class="meta">6 modules · 7h 30m · Beginner</p><div class="foot"><span class="price">$45</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+        <div class="course-card">
+          <div class="course-thumb"><span class="badge badge-gold">Design</span></div>
+          <div class="body"><h3>Design Systems in Practice</h3><p class="meta">6 modules · 8h 50m · Intermediate</p><div class="foot"><span class="price">$65</span><a href="course-details.html" class="btn btn-sm btn-outline">View</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div><span class="seal-word">Vantage <em>Learning</em></span></div>
+    <div><h4>Learn</h4><a href="browse-courses.html">Browse courses</a><a href="my-courses.html">My courses</a></div>
+    <div><h4>Account</h4><a href="login.html">Log in</a><a href="register.html">Register</a></div>
+    <div><h4>Admin</h4><a href="admin-dashboard.html">Admin dashboard</a></div>
+  </div>
+  <div class="foot-bottom">&copy; 2026 Vantage Learning. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

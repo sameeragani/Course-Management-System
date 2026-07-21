@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Progress · Vantage Learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="student-dashboard.html" class="seal">
+      <svg width="26" height="26" viewBox="0 0 30 30" fill="none" style="color:var(--gold)">
+        <circle cx="15" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 19 L7 27 L15 24 L23 27 L21 19" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 7 L16.7 10.5 L20.5 11 L17.7 13.6 L18.4 17.4 L15 15.5 L11.6 17.4 L12.3 13.6 L9.5 11 L13.3 10.5 Z" fill="currentColor"/>
+      </svg>
+      <span class="seal-word">Vantage <em>Learning</em></span>
+    </a>
+    <nav class="sidebar-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="browse-courses.html">Browse Courses</a>
+      <a href="my-courses.html">My Courses</a>
+      <a href="progress.html" class="active">Progress</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="who">Ava Thompson</span>
+      <a href="index.html">Log out</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar"><h1>My Progress</h1></div>
+
+    <div class="main-content" style="max-width:100%">
+      <div class="card">
+        <div class="card-header"><h2>Overall</h2></div>
+        <div style="display:flex;gap:2.4rem;align-items:center;flex-wrap:wrap">
+          <div class="progress-ring">
+            <svg width="108" height="108" viewBox="0 0 108 108">
+              <circle class="track" cx="54" cy="54" r="46"/>
+              <circle class="fill" cx="54" cy="54" r="46" stroke-dasharray="289" stroke-dashoffset="93"/>
+            </svg>
+            <div class="value">68%<small>Overall</small></div>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <div class="hero-stat" style="border-color:var(--border-soft)"><span class="muted">Courses in progress</span><span style="font-family:var(--font-mono);font-weight:600">2</span></div>
+            <div class="hero-stat" style="border-color:var(--border-soft)"><span class="muted">Courses completed</span><span style="font-family:var(--font-mono);font-weight:600">1</span></div>
+            <div class="hero-stat" style="border-color:var(--border-soft);border-bottom:none"><span class="muted">Lessons finished this month</span><span style="font-family:var(--font-mono);font-weight:600">14</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>UI Design Foundations</h2><span class="badge badge-gold">In progress</span></div>
+        <div style="display:flex;align-items:center;gap:1.6rem">
+          <div class="progress-ring" style="width:80px;height:80px">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle class="track" cx="40" cy="40" r="34" stroke-width="7"/>
+              <circle class="fill" cx="40" cy="40" r="34" stroke-width="7" stroke-dasharray="214" stroke-dashoffset="77"/>
+            </svg>
+            <div class="value" style="font-size:.9rem">64%</div>
+          </div>
+          <div style="flex:1">
+            <p class="muted" style="margin-bottom:.4em">Module 3 of 6 · Building a component library</p>
+            <div class="progress-bar"><span style="width:64%"></span></div>
+          </div>
+          <a href="course-content.html" class="btn btn-sm btn-outline">Resume</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>SQL for Analysts</h2><span class="badge badge-gold">In progress</span></div>
+        <div style="display:flex;align-items:center;gap:1.6rem">
+          <div class="progress-ring" style="width:80px;height:80px">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle class="track" cx="40" cy="40" r="34" stroke-width="7"/>
+              <circle class="fill" cx="40" cy="40" r="34" stroke-width="7" stroke-dasharray="214" stroke-dashoffset="167"/>
+            </svg>
+            <div class="value" style="font-size:.9rem">22%</div>
+          </div>
+          <div style="flex:1">
+            <p class="muted" style="margin-bottom:.4em">Module 2 of 8 · Joins &amp; subqueries</p>
+            <div class="progress-bar"><span style="width:22%"></span></div>
+          </div>
+          <a href="course-content.html" class="btn btn-sm btn-outline">Resume</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h2>Technical Writing 101</h2><span class="badge badge-teal">Completed</span></div>
+        <div style="display:flex;align-items:center;gap:1.6rem">
+          <div class="progress-ring" style="width:80px;height:80px">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+              <circle class="track" cx="40" cy="40" r="34" stroke-width="7"/>
+              <circle class="fill" cx="40" cy="40" r="34" stroke-width="7" stroke-dasharray="214" stroke-dashoffset="0"/>
+            </svg>
+            <div class="value" style="font-size:.9rem">100%</div>
+          </div>
+          <div style="flex:1">
+            <p class="muted" style="margin-bottom:.4em">Completed May 2, 2026</p>
+            <div class="progress-bar"><span style="width:100%"></span></div>
+          </div>
+          <a href="certificate.html" class="btn btn-sm btn-primary">View certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
